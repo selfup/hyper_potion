@@ -1,0 +1,4 @@
+<div
+  class="page-data" data-page="<%= @conn.request_path %>"
+>
+</div>

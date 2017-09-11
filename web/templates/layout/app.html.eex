@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello HyperPotion!</title>
+    <link
+      defer
+      rel="stylesheet"
+      href=<%= "#{
+        if (Mix.env == :dev),
+        do: "http://localhost:8080/bundle.css",
+        else: static_path(@conn, "css/app.css")
+      }" %>
+    >
+    <script
+      defer
+      src=<%= "#{
+        if (Mix.env == :dev),
+        do: "http://localhost:8080/bundle.js",
+        else: static_path(@conn, "js/app.js")
+      }" %>
+    ></script>
+  </head>
+
+  <body>
+    <main role="main">
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+  </body>
+</html>
