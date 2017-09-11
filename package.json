@@ -11,7 +11,7 @@
   "author": "Regis Boudinot (selfup)",
   "license": "MIT",
   "dependencies": {
-    "hyperapp": "0.9.3"
+    "hyperapp": "0.12.1"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
