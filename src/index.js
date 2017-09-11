@@ -14,6 +14,11 @@ const pageData = document
   .page;
 
 switch (pageData) {
+  /**
+   * you can either remove the switch statement and make this a single page app
+   * or have each view load in a new app with bundles
+   * TODO: add code splitting to ensure the least amount of JS is send over the wire
+   */
   case '/':
     app({
       state,
